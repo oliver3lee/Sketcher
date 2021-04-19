@@ -1,0 +1,565 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文 (繁體，台灣) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#include ""res\\Sketcher.rc2""  // 非 Microsoft Visual C++ 編輯過的資源\r\n"
+    "#include ""l.CHT\\afxres.rc""      // 標準元件\r\n"
+    "#include ""l.CHT\\afxprint.rc""    // 列印/預覽列印資源\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Sketcher.ico"
+IDR_SketchTYPE          ICON                    "res\\SketcherDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_ELEMENT_LINE
+    BUTTON      ID_ELEMENT_RECTANGLE
+    BUTTON      ID_ELEMENT_CIRCLE
+    BUTTON      ID_ELEMENT_TEXT
+    SEPARATOR
+    BUTTON      ID_COLOR_BLACK
+    BUTTON      ID_COLOR_RED
+    BUTTON      ID_COLOR_GREEN
+    BUTTON      ID_COLOR_BLUE
+    SEPARATOR
+    BUTTON      ID_STYLE_NULL
+    BUTTON      ID_STYLE_FILL
+    BUTTON      ID_STYLE_CROSS
+    BUTTON      ID_STYLE_FDIAGONAL
+    BUTTON      ID_STYLE_VERTICAL
+    BUTTON      ID_PEN_WIDTH
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "檔案(&F)"
+    BEGIN
+        MENUITEM "開新檔案(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開啟舊檔(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "關閉(&C)",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "列印設定(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使用的檔案",                     ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "結束(&X)",                      ID_APP_EXIT
+    END
+    POPUP "檢視(&V)"
+    BEGIN
+        MENUITEM "工具列(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "狀態列(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "說明(&H)"
+    BEGIN
+        MENUITEM "關於 Sketcher(&A)...",          ID_APP_ABOUT
+    END
+END
+
+IDR_SketchTYPE MENU
+BEGIN
+    POPUP "檔案(&F)"
+    BEGIN
+        MENUITEM "開新檔案(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開啟舊檔(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "關閉(&C)",                      ID_FILE_CLOSE
+        MENUITEM "儲存檔案(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存新檔(&A)...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "列印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "預覽列印(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "列印設定(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使用的檔案",                     ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "結束(&X)",                      ID_APP_EXIT
+    END
+    POPUP "編輯(&E)"
+    BEGIN
+        MENUITEM "復原(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪下(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "複製(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "貼上(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "檢視(&V)"
+    BEGIN
+        MENUITEM "工具列(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "狀態列(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Scale...",                    ID_VIEW_SCALE
+    END
+    POPUP "視窗(&W)"
+    BEGIN
+        MENUITEM "開新視窗(&N)",                    ID_WINDOW_NEW
+        MENUITEM "重疊顯示(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "並排顯示(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列圖示(&A)",                    ID_WINDOW_ARRANGE
+    END
+    POPUP "說明(&H)"
+    BEGIN
+        MENUITEM "關於 Sketcher(&A)...",          ID_APP_ABOUT
+    END
+    POPUP "元件(&L)"
+    BEGIN
+        MENUITEM "Line",                        ID_ELEMENT_LINE
+        MENUITEM "Rectangle",                   32773
+        MENUITEM "Circle",                      32774
+        MENUITEM SEPARATOR
+        MENUITEM "文字",                          ID_ELEMENT_TEXT
+    END
+    POPUP "顏色筆寬(&C)"
+    BEGIN
+        MENUITEM "Black",                       ID_COLOR_BLACK
+        MENUITEM "Red",                         32777
+        MENUITEM "Green",                       32778
+        MENUITEM "Blue",                        ID_COLOR_BLUE
+        MENUITEM SEPARATOR
+        MENUITEM "Pen Width...",                ID_PEN_WIDTH
+    END
+    POPUP "筆刷樣式(&P)"
+    BEGIN
+        MENUITEM "無填滿",                         ID_STYLE_NULL
+        MENUITEM "填滿",                          ID_STYLE_FILL
+        MENUITEM "網格",                          ID_STYLE_CROSS
+        MENUITEM "斜條紋",                         ID_STYLE_FDIAGONAL
+        MENUITEM "直條紋",                         ID_STYLE_VERTICAL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "關於 Sketcher"
+FONT 9, "????", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "Sketcher, 1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2020",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "確定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PENWIDTH_DLG DIALOGEX 0, 0, 295, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "更改筆寬"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,216,54,50,14
+    PUSHBUTTON      "取消",IDCANCEL,216,78,50,14
+    GROUPBOX        "Pen Width",IDC_STATIC,13,12,269,114
+    CONTROL         "1 Pixel",IDC_PENWIDTH0,"Button",BS_AUTORADIOBUTTON,30,29,37,10
+    CONTROL         "0.01 inches",IDC_PENWIDTH1,"Button",BS_AUTORADIOBUTTON,30,68,53,10
+    CONTROL         "0.02 inches",IDC_PENWIDTH2,"Button",BS_AUTORADIOBUTTON,30,107,53,10
+    CONTROL         "0.03 inches",IDC_PENWIDTH3,"Button",BS_AUTORADIOBUTTON,123,29,53,10
+    CONTROL         "0.05 inches",IDC_PENWIDTH5,"Button",BS_AUTORADIOBUTTON,123,107,53,10
+    CONTROL         "0.04 inches",IDC_PENWIDTH4,"Button",BS_AUTORADIOBUTTON,123,68,53,10
+END
+
+IDD_TEXT_DLG DIALOGEX 0, 0, 301, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "輸入文字"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,178,143,50,14
+    PUSHBUTTON      "取消",IDCANCEL,238,143,50,14
+    EDITTEXT        IDC_EDIT_TEXT,12,12,276,114,ES_MULTILINE
+    PUSHBUTTON      "字型設定",IDC_FONT_EDIT,12,143,78,14
+END
+
+IDD_SCLAE_DLG DIALOGEX 0, 0, 171, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Drawing Scale"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,29,61,50,14
+    PUSHBUTTON      "取消",IDCANCEL,94,61,50,14
+    EDITTEXT        IDC_SCALE,66,23,73,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_SCALE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,139,22,11,14
+    LTEXT           "View Scale : ",IDC_STATIC,25,26,40,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404B0"
+        BEGIN
+            VALUE "CompanyName", "TODO:  <公司名稱>"
+            VALUE "FileDescription", "Sketcher"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Sketcher.exe"
+            VALUE "LegalCopyright", "TODO: (c) <公司名稱>.  著作權所有，並保留一切權利。"
+            VALUE "OriginalFilename", "Sketcher.exe"
+            VALUE "ProductName", "TODO:  <產品名稱>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PENWIDTH_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_TEXT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_SCLAE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Sketcher2020"
+    IDR_SketchTYPE          "\nSketch\nSketcher\nSketcher Files (*.ske)\n.ske\nSketcher.Document\nSketcher.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Sketcher"
+    AFX_IDS_IDLEMESSAGE     "就緒"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "建立新文件\n開新檔案"
+    ID_FILE_OPEN            "開啟現有文件\n開啟舊檔"
+    ID_FILE_CLOSE           "關閉使用中文件\n關閉檔案"
+    ID_FILE_SAVE            "儲存使用中文件\n儲存檔案"
+    ID_FILE_SAVE_AS         "將使用中文件以新名稱儲存\n另存新檔"
+    ID_FILE_PAGE_SETUP      "變更列印選項\n版面設定"
+    ID_FILE_PRINT_SETUP     "變更印表機及列印選項\n列印設定"
+    ID_FILE_PRINT           "列印使用中文件\n列印"
+    ID_FILE_PRINT_DIRECT    "使用目前選項列印使用中文件\n快速列印"
+    ID_FILE_PRINT_PREVIEW   "顯示整頁\n預覽列印"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "顯示程式資訊、版本號碼及著作權\n關於"
+    ID_APP_EXIT             "結束應用程式; 提示使用者儲存文件\n結束"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "開啟這份文件"
+    ID_FILE_MRU_FILE2       "開啟這份文件"
+    ID_FILE_MRU_FILE3       "開啟這份文件"
+    ID_FILE_MRU_FILE4       "開啟這份文件"
+    ID_FILE_MRU_FILE5       "開啟這份文件"
+    ID_FILE_MRU_FILE6       "開啟這份文件"
+    ID_FILE_MRU_FILE7       "開啟這份文件"
+    ID_FILE_MRU_FILE8       "開啟這份文件"
+    ID_FILE_MRU_FILE9       "開啟這份文件"
+    ID_FILE_MRU_FILE10      "開啟這份文件"
+    ID_FILE_MRU_FILE11      "開啟這份文件"
+    ID_FILE_MRU_FILE12      "開啟這份文件"
+    ID_FILE_MRU_FILE13      "開啟這份文件"
+    ID_FILE_MRU_FILE14      "開啟這份文件"
+    ID_FILE_MRU_FILE15      "開啟這份文件"
+    ID_FILE_MRU_FILE16      "開啟這份文件"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切換至下一窗格\n下一個窗格"
+    ID_PREV_PANE            "切換至上一個窗格\n上一個窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "為使用中的文件開啟另一個視窗\n開新視窗"
+    ID_WINDOW_ARRANGE       "將圖示排列在視窗底部\n排列圖示"
+    ID_WINDOW_CASCADE       "重疊排列視窗\n重疊顯示"
+    ID_WINDOW_TILE_HORZ     "視窗以不重疊的方式顯示\n並排顯示"
+    ID_WINDOW_TILE_VERT     "視窗以不重疊的方式顯示\n並排顯示"
+    ID_WINDOW_SPLIT         "將使用中視窗切割成窗格\n分割視窗"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除選取範圍\n清除"
+    ID_EDIT_CLEAR_ALL       "清除所有的項目\n全部清除"
+    ID_EDIT_COPY            "複製選取項目並放到剪貼簿\n複製"
+    ID_EDIT_CUT             "剪下選取項目並放到剪貼簿\n剪下"
+    ID_EDIT_FIND            "尋找指定的文字\n尋找"
+    ID_EDIT_PASTE           "插入剪貼簿的內容\n貼上"
+    ID_EDIT_REPEAT          "重複上次的動作\n重複"
+    ID_EDIT_REPLACE         "用不同的文字取代指定文字\n取代"
+    ID_EDIT_SELECT_ALL      "選取整份文件\n全選"
+    ID_EDIT_UNDO            "復原上次的動作\n復原"
+    ID_EDIT_REDO            "取消復原上次的動作\n取消復原"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "顯示或隱藏工具列\n切換工具列"
+    ID_VIEW_STATUS_BAR      "顯示或隱藏狀態列\n切換狀態列"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "變更視窗大小"
+    AFX_IDS_SCMOVE          "變更視窗位置"
+    AFX_IDS_SCMINIMIZE      "將視窗縮成一個圖示"
+    AFX_IDS_SCMAXIMIZE      "將視窗放到最大"
+    AFX_IDS_SCNEXTWINDOW    "切換至下一個文件視窗"
+    AFX_IDS_SCPREVWINDOW    "切換至上一個文件視窗"
+    AFX_IDS_SCCLOSE         "關閉使用中視窗並提示使用者儲存文件"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "將視窗還原成標準大小"
+    AFX_IDS_SCTASKLIST      "啟動工作清單"
+    AFX_IDS_MDICHILD        "啟動這個視窗"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "關閉預覽列印模式\n取消預覽"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ELEMENT_LINE         "線條\n線條"
+    ID_ELEMENT_RECTANGLE    "長方形\n長方形"
+    ID_ELEMENT_CIRCLE       "圓形\n圓形"
+    ID_ELEMENT_CURVE        "曲線"
+    ID_COLOR_BLACK          "黑\n黑"
+    ID_COLOR_RED            "紅\n紅"
+    ID_COLOR_GREEN          "綠\n綠"
+    ID_COLOR_BLUE           "藍\n藍"
+END
+
+STRINGTABLE
+BEGIN
+    ID_32808                "網格\n網格"
+    ID_32809                "斜條紋\n斜條紋"
+    ID_32810                "直條紋\n直條紋"
+    ID_STYLE_CROSS          "網格\n網格"
+    ID_STYLE_FDIAGONAL      "斜條紋\n斜條紋"
+    ID_STYLE_VERTICAL       "直條紋\n直條紋"
+    ID_32814                "無填滿\n無填滿"
+    ID_32815                "填滿\n填滿"
+END
+
+STRINGTABLE
+BEGIN
+    ID_STYLE_NULL           "無填滿\n無填滿"
+    ID_STYLE_FILL           "填滿\n填滿"
+    ID_PEN_WIDTH            "更改筆寬\n顯示筆寬選項"
+    ID_ELEMENT_TEXT         "文字\n文字"
+END
+
+#endif    // 中文 (繁體，台灣) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE 4, 1
+#include "res\Sketcher.rc2"  // 非 Microsoft Visual C++ 編輯過的資源
+#include "l.CHT\afxres.rc"      // 標準元件
+#include "l.CHT\afxprint.rc"    // 列印/預覽列印資源
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
